@@ -1,0 +1,683 @@
+<!--Examen Geometria-->
+<form [formGroup]="formularioPreguntas" (ngSubmit)="primerexamen($event)">
+    <div class="contenedor">
+      <h1>Examen de Geometria</h1>
+      <div class="contenido">
+        <div class="pregresp">
+          <div class="pregunta">1. ¿Qué es la Geometria?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg1"
+              value="1"
+              formControlName="preg1"
+            />Es el que se encargar de estudiar las propiedades de diferentes figuras<br />
+            <input
+              type="radio"
+              name="preg1"
+              value="2"
+              formControlName="preg1"
+            />Es el que se encarga de estudiar las formas de los objetos, la relación entre ellos
+            y las propiedades que los rodea.<br />
+            <input
+              type="radio"
+              name="preg1"
+              value="3"
+              formControlName="preg1"
+            />Es el que se encarga de estudiar a los triangulos y angulos asi como los cuadrados.<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">2. ¿Cuantas tipos de geometrias exiten?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg2"
+              value="1"
+              formControlName="preg2"
+            />4<br />
+            <input
+              type="radio"
+              name="preg2"
+              value="2"
+              formControlName="preg2"
+            />2<br />
+            <input
+              type="radio"
+              name="preg2"
+              value="3"
+              formControlName="preg2"
+            />1<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">3. ¿Cuáles son los tipos de geometrias?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg3"
+              value="1"
+              formControlName="preg3"
+            />Absoluta,Euclidea, No Euclidea<br />
+            <input
+              type="radio"
+              name="preg3"
+              value="2"
+              formControlName="preg3"
+            />Absoluta, Clasica<br />
+            <input
+              type="radio"
+              name="preg3"
+              value="3"
+              formControlName="preg3"
+            />Absoluta,Euclidea,clasica,No Euclidea<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            4.¿Cuales son las figuras fundamentales de la Geometria ?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg4"
+              value="1"
+              formControlName="preg4"
+            />Plano,Esfera,Cubo<br />
+            <input
+              type="radio"
+              name="preg4"
+              value="2"
+              formControlName="preg4"
+            />Punto, Recta, Plano <br />
+            <input
+              type="radio"
+              name="preg4"
+              value="3"
+              formControlName="preg4"
+            />Recta,Cubo, Triangulo<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">5.La recta se puede ver como:<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg5"
+              value="1"
+              formControlName="preg5"
+            />Segmento,Semirecta, Vectores<br />
+            <input
+              type="radio"
+              name="preg5"
+              value="2"
+              formControlName="preg5"
+            />Puntos,lineas,recta<br />
+            <input
+              type="radio"
+              name="preg5"
+              value="3"
+              formControlName="preg5"
+            />Parametro,entrada, segmento<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            6.¿Es un elemento geometrico que no tiene longitud,anchura,ni altura, este ocupa solo un lugar en el 
+            espacio?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg6"
+              value="1"
+              formControlName="preg6"
+            />Plano<br />
+            <input
+              type="radio"
+              name="preg6"
+              value="2"
+              formControlName="preg6"
+            />Recta<br />
+            <input
+              type="radio"
+              name="preg6"
+              value="3"
+              formControlName="preg6"
+            />Punto<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            7. ¿Es una sucesión infinita de puntos,situados en una misma posición?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg7"
+              value="1"
+              formControlName="preg7"
+            />Recta<br />
+            <input
+              type="radio"
+              name="preg7"
+              value="2"
+              formControlName="preg7"
+            />Circulo<br />
+            <input
+              type="radio"
+              name="preg7"
+              value="3"
+              formControlName="preg7"
+            />plano<br />
+          </div>
+        </div>
+        <div class="pregresp">
+          <div class="pregunta">
+            8. ¿Es un elemento sin volumen y formas por un infinito de rectas y puntos?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg8"
+              value="1"
+              formControlName="preg8"
+            />Elipse<br />
+            <input
+              type="radio"
+              name="preg8"
+              value="2"
+              formControlName="preg8"
+            />Plano<br />
+            <input
+              type="radio"
+              name="preg8"
+              value="3"
+              formControlName="preg8"
+            />Circulo<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            9. Dos rectas son paralelas si:<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg9"
+              value="1"
+              formControlName="preg9"
+            />Sus pendientes son diferentes<br />
+            <input
+              type="radio"
+              name="preg9"
+              value="2"
+              formControlName="preg9"
+            />Sus pendientes son diferentes y el producto es -1, las rectas se intersectan<br />
+            <input
+              type="radio"
+              name="preg9"
+              value="3"
+              formControlName="preg9"
+            />Su pendiente son iguales y las rectas no se intersectan<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            10.Dos rectas son perpendiculares si:<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg10"
+              value="1"
+              formControlName="preg10"
+            />Sus pendientes son diferentes y el producto es -1, las rectas se intersectan<br />
+            <input
+              type="radio"
+              name="preg10"
+              value="2"
+              formControlName="preg10"
+            />Sus pendiente son iguales y las rectas no se intersectan<br />
+            <input
+              type="radio"
+              name="preg10"
+              value="3"
+              formControlName="preg10"
+            />Sus pendientes son diferentes<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">11.¿Cual es la ecuación de la recta ordenada al origen?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg11"
+              value="1"
+              formControlName="preg11"
+            />y-y1=m(x-x1)<br />
+            <input
+              type="radio"
+              name="preg11"
+              value="2"
+              formControlName="preg11"
+            />x/a+y/b=1<br />
+            <input
+              type="radio"
+              name="preg11"
+              value="3"
+              formControlName="preg11"
+            />y=mx+b<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">12.¿Cual es la ecuación de la recta dado dos puntos?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg12"
+              value="1"
+              formControlName="preg12"
+            />y-y1=[(y2-y1)/(x2-x1)](x-x1)<br />
+            <input
+              type="radio"
+              name="preg12"
+              value="2"
+              formControlName="preg12"
+            />Ax+By+C=0<br />
+            <input
+              type="radio"
+              name="preg12"
+              value="3"
+              formControlName="preg12"
+            />y-y1=m(x-x1)<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            13.¿Cual es la ecuación simetrica de la recta?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg13"
+              value="1"
+              formControlName="preg13"
+            />Ax+By+c=0<br />
+            <input
+              type="radio"
+              name="preg13"
+              value="2"
+              formControlName="preg13"
+            />x/a+y/b=1<br />
+            <input
+              type="radio"
+              name="preg13"
+              value="3"
+              formControlName="preg13"
+            />ax+cy-b=0<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            14. ¿Cual es la ecuacion general de la recta que pasa por los puntos siguientes: 
+            P(-1,-1) y Q(2,5)?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg14"
+              value="1"
+              formControlName="preg14"
+            />x+3y-5=0<br />
+            <input
+              type="radio"
+              name="preg14"
+              value="2"
+              formControlName="preg14"
+            />3x+2y-1=0<br />
+            <input
+              type="radio"
+              name="preg14"
+              value="3"
+              formControlName="preg14"
+            />2x-y=0<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">15.¿Cual es la pendiente y la ordenada en el origen de 
+            la recta 3x+2y-7=0?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg15"
+              value="1"
+              formControlName="preg15"
+            />M = 8 y B = 11/3<br />
+            <input
+              type="radio"
+              name="preg15"
+              value="2"
+              formControlName="preg15"
+            />M = 1/2 y B = -12/5<br />
+            <input
+              type="radio"
+              name="preg15"
+              value="3"
+              formControlName="preg15"
+            />M = -3/2 y B = 7/2<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">16.¿Cual de las siguientes par de rectas son paralelas?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg16"
+              value="1"
+              formControlName="preg16"
+            />Linea recta 1: y=2x+4 , Linea recta 2: y=10x-4<br />
+            <input
+              type="radio"
+              name="preg16"
+              value="2"
+              formControlName="preg16"
+            />Linea recta 1: y=3x+8 , Linea recta 2: y=3x-4<br />
+            <input
+              type="radio"
+              name="preg16"
+              value="3"
+              formControlName="preg16"
+            />Linea recta 1: y=-x-10 , Linea recta 2: y=x+8<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">17.¿Cual de las siguientes par de rectas son perpendiculares?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg17"
+              value="1"
+              formControlName="preg17"
+            />Linea recta 1: y=-1/3x+2 , Linea recta 2: y=3x-4<br />
+            <input
+              type="radio"
+              name="preg17"
+              value="2"
+              formControlName="preg17"
+            />Linea recta 1: y=-x-5 , Linea recta 2: y=2/3x+7<br />
+            <input
+              type="radio"
+              name="preg17"
+              value="3"
+              formControlName="preg17"
+            />Linea recta 1: y=x-10 , Linea recta 2: y=x+8<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            18.La recta r:3x+ny-7=0 pasa por el punto A(3,2) y es paralela a la recta 
+            s: mx+2y-13=0. ¿Cual es el valor de m y n?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg18"
+              value="1"
+              formControlName="preg18"
+            />M = -2 y N = 6<br />
+            <input
+              type="radio"
+              name="preg18"
+              value="2"
+              formControlName="preg18"
+            />M = -6 y N = -1<br />
+            <input
+              type="radio"
+              name="preg18"
+              value="3"
+              formControlName="preg18"
+            />M = 3 y N = -2<br />
+          </div>
+        </div>
+             <div class="pregresp">
+          <div class="pregunta">
+            19.¿Cuál es la ecuación general de la circunferencia de centro(3,4) y radio = 2?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg19"
+              value="1"
+              formControlName="preg19"
+            />x^2+y^2+4x-12y+15=0<br />
+            <input
+              type="radio"
+              name="preg19"
+              value="2"
+              formControlName="preg19"
+            />x^2+y^2+6x+8y-21=0<br />
+            <input
+              type="radio"
+              name="preg19"
+              value="3"
+              formControlName="preg19"
+            />x^2+y^2-6x-8y+21=0<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            20.¿Cuál es el centro y radio de la siguiente ecuación general x^2+y^2-2x+4y-4=0?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg20"
+              value="1"
+              formControlName="preg20"
+            />centro(3,-4) y radio = 1<br />
+            <input
+              type="radio"
+              name="preg20"
+              value="2"
+              formControlName="preg20"
+            />centro(-2,1) y radio = 2<br />
+            <input
+              type="radio"
+              name="preg20"
+              value="3"
+              formControlName="preg20"
+            />centro(1,-2) y radio = 3<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            21.¿Cual es el foco y la directriz de la parabola con la siguiente ecuación 6y^2-12x=0?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg21"
+              value="1"
+              formControlName="preg21"
+            />Foco F(1/2,0) y Directriz x= -1/2<br />
+            <input
+              type="radio"
+              name="preg21"
+              value="2"
+              formControlName="preg21"
+            />Foco F(2,3) y Directriz x= 1/2<br />
+            <input
+              type="radio"
+              name="preg21"
+              value="3"
+              formControlName="preg21"
+            />Foco F(4,-1) y Directriz x= 3<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            22.Dado el foco(3,2) y de vertice(5,2),¿Cual es la ecuación de la parabola? <br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg22"
+              value="1"
+              formControlName="preg22"
+            />(x+2)^2=12(y-2)<br />
+            <input
+              type="radio"
+              name="preg22"
+              value="2"
+              formControlName="preg22"
+            />(y-2)^2=-8(x-5)<br />
+            <input
+              type="radio"
+              name="preg22"
+              value="3"
+              formControlName="preg22"
+            />(y-k)^2=8(x+5)<br />
+          </div>
+        </div>
+  
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            23.¿Cuál es la ecuacion de la elipse que tiene centro(0,0), Foco(2,0) y A(3,0)?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg23"
+              value="1"
+              formControlName="preg23"
+            />x^2/15+y^2/15=1<br />
+            <input
+              type="radio"
+              name="preg23"
+              value="2"
+              formControlName="preg23"
+            />x^2/10+y^2/6=1<br />
+            <input
+              type="radio"
+              name="preg23"
+              value="3"
+              formControlName="preg23"
+            />x^2/9+y^2/5=1<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            24.¿Cuál es la ecuacion de la elipse que tiene centro(1,-1), Foco(1,2) y A(1,4)?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg24"
+              value="1"
+              formControlName="preg24"
+            />(x-1)^2/16+(y+1)^2/25=1<br />
+            <input
+              type="radio"
+              name="preg24"
+              value="2"
+              formControlName="preg24"
+            />(x+1)^2/25+(y-1)^2/17=1<br />
+            <input
+              type="radio"
+              name="preg24"
+              value="3"
+              formControlName="preg24"
+            />(x-2)^2/20+(y+4)^2/35=1<br />
+          </div>
+        </div>
+             <div class="pregresp">
+          <div class="pregunta">
+            25.¿Cuál es la ecuacion de la hiperbola que tiene centro(3,2), Foco(7,2) y A(5,2)?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg25"
+              value="1"
+              formControlName="preg25"
+            />(x+3)^2/6-(y+2)^2/10=1<br />
+            <input
+              type="radio"
+              name="preg25"
+              value="2"
+              formControlName="preg25"
+            />(x-3)^2/4-(y-2)^2/12=1<br />
+            <input
+              type="radio"
+              name="preg25"
+              value="3"
+              formControlName="preg25"
+            />(x-2)^2/4-(y-4)^2/12=1<br />
+          </div>
+        </div>
+        <br />
+        <ul class="nav nav-tabs menu">
+          <li class="nav-item">
+            <button
+              type="submit"
+              [disabled]="formularioPreguntas.invalid"
+              class="btn btn-primary"
+            >
+              Calificar
+            </button>
+          </li>
+  <br>
+          <li class="nav-item">
+            <a class="nav-link materia" aria-current="page"
+              >Calificación: {{ calificacion_1 }}</a
+            >
+          </li>
+  
+          <li class="nav-item">
+            <button type="reset" class="btn btn-danger">Borrar</button>
+          </li>
+  
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-warning"
+              [disabled]="bloquear"
+              (click)="registrarCalificacion()"
+            >
+              Registrar Calificación
+            </button>
+          </li>
+        </ul>
+        <p>Respuestas Correctas:{{ respuestas_correctas_1 }}</p>
+        <p>Respuestas incorrectas: {{ respuestas_incorrectas_1 }}</p>
+        <p>
+          Nota: Si tienes alguna duda de algun tema o ejercicio consultalo con tu
+          asesor correspondiente.
+        </p>
+      </div>
+    </div>
+  </form>
+  <ng-template #successTpl> I'm a success toast </ng-template>
+

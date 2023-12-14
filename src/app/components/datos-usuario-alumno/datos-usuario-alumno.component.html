@@ -1,0 +1,35 @@
+<main>
+    <hr>
+    <h1>Registro de usuario del alumno</h1>
+    <hr><br>
+    <form class="formulario" id="formulario">
+      <!-- Grupo: Usuario -->
+      <div class="formulario__grupo" id="grupo__usuario">
+        <label for="correo" class="formulario__label">Correo</label>
+        <div class="formulario__grupo-input">
+          <input formControlName="correo" type="text" class="formulario__input">
+        </div>
+      </div>
+
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label for="contraseña" class="formulario__label">Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input formControlName="contraseña" value="FakePSW"
+          id="myInput" type="password" class="formulario__input">
+          <input type="checkbox" onclick="main()" />Mostrar contraseña
+        </div>
+      </div>
+  
+      <!-- Grupo: Nombre -->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label for="correo_respaldo" class="formulario__label">Correo de respaldo</label>
+        <div class="formulario__grupo-input">
+          <input formControlName="correo_respaldo" type="text" class="formulario__input" id="correo_respaldo">
+        </div>
+      </div>
+  
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="btn btn-outline-primary">Continuar</button>
+      </div>
+    </form>
+  </main>

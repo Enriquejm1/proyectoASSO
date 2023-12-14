@@ -1,0 +1,65 @@
+<app-encabezado-alumno></app-encabezado-alumno>
+<main>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+      <nav>
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Alumnos-inicio">Inicio</a>
+          </li>
+          <li><a class="nav-link active">Modulo 1</a>
+            <ul class="submenu">
+                <li><a href="/Alumnos-Materias-Aritmetica">Aritmetica</a></li>
+                <li><a href="/Alumnos-Materias-Algebra">Algebra</a></li>
+                <li><a class="nav-link active">Trigonometria</a></li>
+                <li><a href="/Alumnos-Materias-Geometria">Geometria</a></li>
+                <li><a href="/Alumnos-Materias-Calculo-Integral">Calculo integral</a></li>
+                <li><a href="/Alumnos-Materias-Calculo-Diferencial">Calculo diferencial</a></li>
+                <li><a href="/Alumnos-Materias-Probabilidad">Probabilidad</a></li>
+                <li><a href="/Alumnos-Materias-Estadistica">Estadistica</a></li>
+            </ul>
+          </li>
+
+          <li><a>Modulo 2 </a>
+            <ul class="submenu">
+                <li><a href="/Alumnos-Materias-Spanish">Español</a></li>
+                <li><a href="/Alumnos-Materias-Ingles">Ingles</a></li>
+                <li><a href="/Alumnos-Materias-Biologia">Biologia</a></li>
+                <li><a href="/Alumnos-Materias-Fisica">Fisica</a></li>
+                <li><a href="/Alumnos-Materias-Geografia">Geografia</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link disabled" href="/Alumnos-Examen-Final">Examen Final</a>
+          </li>
+          <li><a>Material Extra</a>
+            <ul class="submenu">
+              <li><a>Razonamiento matemático</a></li>
+              <li><a>Razonamiento Logico</a></li>
+              <li><a>Comprensión lectora</a></li>
+              <li><a>Aritmetica y algebra</a></li>
+            </ul>
+          </li>
+          <li><a>
+            <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+            class="rounded-circle"
+            height="30"
+            alt="Portrait of a Woman"
+            loading="lazy"
+            /></a>
+            <ul class="submenu">
+              <li><a href="/Alumnos-Mi-perfil">Perfil</a></li>
+              <li><hr class="dropbown-divider"></li>
+              <li><a (click) = "logOut()">Salir</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+</main>
+<app-materia-trigonometria></app-materia-trigonometria>
+<app-footer></app-footer>

@@ -1,0 +1,33 @@
+<main>
+  <hr>
+  <h1>Registro de curso</h1>
+  <hr><br>
+  <form class="formulario" id="formulario">
+    <!-- Grupo: Usuario -->
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="institucion" class="formulario__label">Institución</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="institucion" type="text" class="formulario__input">
+      </div>
+    </div>
+
+    <!-- Grupo: Nombre -->
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="carrera" class="formulario__label">Carrera</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="carrera" type="text" class="formulario__input" id="carrera">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label class="formulario__label">Fecha de examen</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="fecha_examen" type="date" class="formulario__input" id="fecha_examen">
+      </div>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="btn btn-outline-primary">Continuar</button>
+    </div>
+  </form>
+</main>

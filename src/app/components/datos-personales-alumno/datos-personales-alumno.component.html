@@ -1,0 +1,68 @@
+<main>
+  <hr>
+  <h1>Registro de datos del alumno</h1>
+  <hr><br>
+  <form class="formulario" id="formulario">
+    <!-- Grupo: Usuario -->
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="nombre" class="formulario__label">Nombre</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="nombre" type="text" class="formulario__input">
+      </div>
+    </div>
+
+    <!-- Grupo: Nombre -->
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="nombre" class="formulario__label">Apellido paterno</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="apellidopa" type="text" class="formulario__input" id="apellido_paterno">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="nombre" class="formulario__label">Apellido materno</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="apellidoma" type="text" class="formulario__input" id="apellido_materno">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="telefono" class="formulario__label">Teléfono</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="telefono" type="text" class="formulario__input" id="telefono">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="telefono" class="formulario__label">Estado</label>
+      <select id="estado" formControlName="estado" class="formulario__input">
+        <option selected>Seleccionar...</option>
+                <option  >Disponible</option>
+                <option  >Ausente</option>
+                <option >Ocupado</option>
+      </select>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="telefono" class="formulario__label">Genero</label>
+      <select id="genero" formControlName="genero" class="formulario__input">
+        <option selected>Seleccionar...</option>
+        <option >Masculino</option>
+        <option >Femenino</option>
+      </select>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label class="formulario__label">Fecha de nacimiento</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="fecha" type="date" class="formulario__input" id="fecha_nac">
+      </div>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="btn btn-outline-primary">Continuar</button>
+      <br>
+      <a class="btn btn-outline-danger" href="/Administrador-Personal" role="button">Cancelar</a>
+    </div>
+  </form>
+</main>

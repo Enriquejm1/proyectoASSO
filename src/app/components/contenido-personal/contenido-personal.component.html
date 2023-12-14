@@ -1,0 +1,36 @@
+<div class="container">
+    
+    <div class="title">
+        <h4>Listado de asesores</h4>
+        <button type="button" class="btn btn-info" routerLink="/Administrador-registrar-persona-asesor">Agregar Asesor</button>
+    </div>
+   
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido paterno</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Codigo postal</th>
+            <th scope="col">Correo</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of listAsesores" class="table-active">
+            <td>{{item.nombre}}</td>
+            <td>{{item.apellidopaterno}}</td>
+            <td>{{item.telefono}}</td>
+            <td>{{item.estado}}</td>
+            <td>{{item.codigopostal}}</td>
+            <td>{{item.correo}}</td>
+            <td>
+                <button type="button" class="btn btn-warning btn-sm" routerLink="/Administrador-modificar-datos-asesor/{{item.id}}">Editar</button>
+                <button type="button" class="btn btn-danger btn-sm ms-2">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+   

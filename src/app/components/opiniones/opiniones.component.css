@@ -1,0 +1,29 @@
+h1{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    background-color: #0c3563;
+}
+
+p{
+    font-size: 100%;
+    text-align: justify;
+}
+td {
+    padding: 10px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px solid black;
+    border-left: 10px;
+    text-align: center;
+}
+
+.contenido{
+    display: flex;
+  justify-content: center;
+}
+
+.opinion{
+    text-align: justify;
+    font-size: 100%;
+}

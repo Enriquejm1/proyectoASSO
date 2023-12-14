@@ -1,0 +1,48 @@
+
+.contenido{
+    color: black;
+    background: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+  }
+  
+  
+  p{
+      font-size: 100%;
+      text-align: justify;
+      color: black;
+      background: white;
+  }
+  
+  h1{
+      font-size: 200%;
+      text-align: center;
+      color: black;
+      background: white;
+  }
+  
+  h2{
+      font-size: 150%;
+      text-align: center;
+      color: black;
+      
+  }
+  
+  .pregresp {
+      border: 1px solid #64bea5;
+      padding: 10px;
+      margin: 1px;
+      font-family: Arial, Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      }
+      
+      .pregunta {
+      color: #0c3563
+      }
+      
+      .respuestas {
+      color: #000000;
+      }

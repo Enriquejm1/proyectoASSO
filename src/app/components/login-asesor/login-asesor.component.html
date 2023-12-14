@@ -1,0 +1,69 @@
+<h1>Iniciar Sesión</h1>
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <!-- Jumbotron -->
+  <div class="container py-4" *ngIf="!loading">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div
+          class="card cascading-right"
+          style="
+            background: hsla(145, 83%, 37%, 0.55);
+            backdrop-filter: blur(30px);
+          "
+        >
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Bienvenido Asesor</h2>
+            <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
+              Inicia sesión con su cuenta
+            </h5>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input
+              placeholder="Correo electronico"
+                type="email"
+                id="form3Example3"
+                class="form-control"
+                [(ngModel)]="correo"
+              />
+              
+            </div>
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input
+              placeholder="Contraseña"
+                type="password"
+                value="FakePSW"
+                id="myInput"
+                class="form-control"
+                [(ngModel)]="contra"
+              />
+              <!-- An element to toggle between password visibility --> <br>
+              <input type="checkbox" onclick="main()" />Mostrar contraseña
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              (click)="login()"
+            >
+              Iniciar Sesión
+            </button>
+          </div>
+        </div>
+      </div>
+      <app-spinner *ngIf="loading"></app-spinner>
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img
+          src="assets/MuchasMatematicasP2.png"
+          class="w-90 rounded-4 shadow-4"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

@@ -1,0 +1,37 @@
+<main>
+  <hr>
+  <h1>Registro de usuario</h1>
+  <hr><br>
+  <form [formGroup]="form" (ngSubmit)="agregarDatosPersonales()" class="formulario" id="formulario">
+    <!-- Grupo: Usuario -->
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="nombre" class="formulario__label">Correo</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="correo" type="text" class="formulario__input">
+        <span *ngIf="form.get('correo')?.hasError('requerido') && form.get('correo')?.touched"  >
+          <p>El campo nombre es requerido</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="contraseña" class="formulario__label">Contraseña</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="contraseña" value="FakePSW"
+        id="myInput" type="password" class="formulario__input">
+        <input type="checkbox" onclick="main()" />Mostrar contraseña
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="correo_respaldo" class="formulario__label">Correo de respaldo</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="correo_respaldo" type="text" class="formulario__input" id="correo_respaldo">
+      </div>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button [disabled]="form.invalid" type="submit" class="btn btn-outline-primary">Continuar</button>
+    </div>
+  </form>
+</main>

@@ -1,0 +1,43 @@
+<main>
+  <hr>
+  <h1>Registro de Información personal</h1>
+  <hr>
+  <br>
+  <form [formGroup]="form" (ngSubmit)="agregarDatosPersonales()" class="formulario" id="formulario"> 
+    <!-- Grupo: Usuario -->
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="rfc" class="formulario__label">RFC</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="rfc" type="text" class="formulario__input">
+        <span *ngIf="form.get('rfc')?.hasError('requerido') && form.get('rfc')?.touched"  >
+          <p>El campo RFC es requerido</p>
+        </span>
+      </div>
+    </div>
+
+    <!-- Grupo: Nombre -->
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="codigo_postal" class="formulario__label">Codigo postal</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="codigo_postal" type="text" class="formulario__input" id="codigo_postal">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__nombre">
+      <label for="colonia" class="formulario__label">Colonia</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="colonia" type="text" class="formulario__input" id="colonia">
+      </div>
+    </div>
+
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="direccion" class="formulario__label">Dirección</label>
+      <div class="formulario__grupo-input">
+        <input formControlName="direccion" type="text" class="formulario__input" id="direccion">
+      </div>
+    </div>
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button [disabled]="form.invalid" type="submit" class="btn btn-outline-dark">Continuar</button>
+    </div>
+  </form>
+</main>

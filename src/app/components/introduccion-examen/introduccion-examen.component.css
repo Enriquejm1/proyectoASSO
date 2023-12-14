@@ -1,0 +1,29 @@
+.contenido{
+    color: black;
+    background: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+  }
+  
+  p{
+      font-size: 100%;
+      text-align: justify;
+      color: black;
+      background: white;
+  }
+  
+  h1{
+      font-size: 200%;
+      text-align: center;
+      color: black;
+      background: white;
+  }
+  
+  h2{
+      font-size: 150%;
+      text-align: center;
+      color: black;
+      
+  }

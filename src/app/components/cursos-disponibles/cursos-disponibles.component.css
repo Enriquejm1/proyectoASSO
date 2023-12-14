@@ -1,0 +1,36 @@
+
+p{
+    font-size: 100%;
+    text-align: justify;
+}
+
+h2{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    background-color: #0c3563;
+}
+
+td {
+    padding: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px solid black;
+    border-left: 0px;
+    font-size: 200%;
+    text-align: center;
+}
+
+.materias{
+    display: flex;
+  justify-content: center;
+}
+
+
+.foo{
+    font-size: 50%;
+}
+.curso{
+    text-align: justify;
+    padding: 10%;
+}

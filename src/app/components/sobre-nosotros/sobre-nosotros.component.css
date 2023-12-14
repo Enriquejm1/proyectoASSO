@@ -1,0 +1,24 @@
+h1{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    background-color: #0c3563;
+}
+
+td {
+    padding: 100px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 0px solid black;
+    border-left: 10px;
+    text-align: center;
+}
+
+.contenido{
+    display: flex;
+  justify-content: center;
+}
+
+p{
+    text-align: justify;
+}

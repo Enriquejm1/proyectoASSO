@@ -1,0 +1,690 @@
+<!--Examen Aritmetica-->
+<form [formGroup]="formularioPreguntas" (ngSubmit)="primerexamen($event)">
+  <div class="contenedor">
+    <h1>Examen de Aritmetica</h1>
+    <div class="contenido">
+      <div class="pregresp">
+        <div class="pregunta">1. ¿Cuales son los números Naturales?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg1"
+            value="1"
+            formControlName="preg1"
+          />Son los números que se utilizan para contar que empiezan desde el
+          número 1 hasta N<br />
+          <input
+            type="radio"
+            name="preg1"
+            value="2"
+            formControlName="preg1"
+          />Son los números tanto negativos como positivos que van desde -M
+          hasta N<br />
+          <input
+            type="radio"
+            name="preg1"
+            value="3"
+            formControlName="preg1"
+          />Son todos los números en general<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">2. ¿Cuales son los números Enteros?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg2"
+            value="1"
+            formControlName="preg2"
+          />Son todos los números en general<br />
+          <input
+            type="radio"
+            name="preg2"
+            value="2"
+            formControlName="preg2"
+          />Son los números tanto negativos como positivos que van desde -M
+          hasta N<br />
+          <input
+            type="radio"
+            name="preg2"
+            value="3"
+            formControlName="preg2"
+          />Son todos los números negativos<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">3. ¿Cuales son los números Racionales?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg3"
+            value="1"
+            formControlName="preg3"
+          />Son todos los números con raices cuadradas<br />
+          <input
+            type="radio"
+            name="preg3"
+            value="2"
+            formControlName="preg3"
+          />Son todos los números en general<br />
+          <input
+            type="radio"
+            name="preg3"
+            value="3"
+            formControlName="preg3"
+          />Son todos los números que se expresan como fracciones<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          4. ¿Cuales son los números Irracionales?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg4"
+            value="1"
+            formControlName="preg4"
+          />Son todos los números con raices cuadradas y con punto decimal<br />
+          <input
+            type="radio"
+            name="preg4"
+            value="2"
+            formControlName="preg4"
+          />Son todos los números que no se pueden exprear como fracciones<br />
+          <input
+            type="radio"
+            name="preg4"
+            value="3"
+            formControlName="preg4"
+          />Son todos los números que se expresan como fracciones<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">5. ¿Cuales son los números Reales?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg5"
+            value="1"
+            formControlName="preg5"
+          />Son todos los números con punto decimal<br />
+          <input
+            type="radio"
+            name="preg5"
+            value="2"
+            formControlName="preg5"
+          />Son todos los números en general<br />
+          <input
+            type="radio"
+            name="preg5"
+            value="3"
+            formControlName="preg5"
+          />Son todos los números que se expresan como fracciones<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          6. Selecciona la opción que solo tenga números racionales<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg6"
+            value="1"
+            formControlName="preg6"
+          />1,19,200,67,98<br />
+          <input
+            type="radio"
+            name="preg6"
+            value="2"
+            formControlName="preg6"
+          />-290,300,-7,100<br />
+          <input
+            type="radio"
+            name="preg6"
+            value="3"
+            formControlName="preg6"
+          />2/3,-4/8,10/3,0/2<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          7. ¿El número PI y E , que tipos de números son?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg7"
+            value="1"
+            formControlName="preg7"
+          />Racionales<br />
+          <input
+            type="radio"
+            name="preg7"
+            value="2"
+            formControlName="preg7"
+          />Naturales<br />
+          <input
+            type="radio"
+            name="preg7"
+            value="3"
+            formControlName="preg7"
+          />Irracionales<br />
+        </div>
+      </div>
+      <div class="pregresp">
+        <div class="pregunta">
+          8. ¿Cuales son las propiedades de los números reales?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg8"
+            value="1"
+            formControlName="preg8"
+          />Neutro,Asociativa,Conmutatica<br />
+          <input
+            type="radio"
+            name="preg8"
+            value="2"
+            formControlName="preg8"
+          />Conmutativa,Asociativa,Distributiva,Neutro aditivo<br />
+          <input
+            type="radio"
+            name="preg8"
+            value="3"
+            formControlName="preg8"
+          />Inversa,Directa,Distributiva<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          9. ¿Cuales son las propiedades de la suma y multiplicación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg9"
+            value="1"
+            formControlName="preg9"
+          />Conmutativa y Asociativa<br />
+          <input
+            type="radio"
+            name="preg9"
+            value="2"
+            formControlName="preg9"
+          />Distributiva y Asociativa<br />
+          <input
+            type="radio"
+            name="preg9"
+            value="3"
+            formControlName="preg9"
+          />Netro adictivo y Conmutativo<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          10.En la siguiente igualdad 3√5+ 3√7 = 3(√5+ √7), ¿Cuál es la
+          propiedad correcta?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg10"
+            value="1"
+            formControlName="preg10"
+          />Conmutativa<br />
+          <input
+            type="radio"
+            name="preg10"
+            value="2"
+            formControlName="preg10"
+          />Asociativa<br />
+          <input
+            type="radio"
+            name="preg10"
+            value="3"
+            formControlName="preg10"
+          />Distributiva<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">11.¿Cuál es el modulo de la adicion?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg11"
+            value="1"
+            formControlName="preg11"
+          />El 1, porque al sumarlo con otro número incrementa 1<br />
+          <input
+            type="radio"
+            name="preg11"
+            value="2"
+            formControlName="preg11"
+          />El -1,porque al sumar queda negartivo<br />
+          <input
+            type="radio"
+            name="preg11"
+            value="3"
+            formControlName="preg11"
+          />El 0, porque sumado con otro número no lo altera<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">12.¿Cuándo la suma es igual a sumando?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg12"
+            value="1"
+            formControlName="preg12"
+          />Cuando todos los sumados son 0<br />
+          <input
+            type="radio"
+            name="preg12"
+            value="2"
+            formControlName="preg12"
+          />Cuanto todos los sumandos menos uno son 0<br />
+          <input
+            type="radio"
+            name="preg12"
+            value="3"
+            formControlName="preg12"
+          />Cuando algunos de los sumados son 0<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          13.a+b+c=10, ¿Cuál seria la suma si a aumenta 3, b aumenta 5 y c
+          aumenta 10?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg13"
+            value="1"
+            formControlName="preg13"
+          />El resultado es 28<br />
+          <input
+            type="radio"
+            name="preg13"
+            value="2"
+            formControlName="preg13"
+          />El resultado es 20<br />
+          <input
+            type="radio"
+            name="preg13"
+            value="3"
+            formControlName="preg13"
+          />El resultado es 35<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          14.Si el sustraendo se suma con la diferencia, ¿Qué se obtiene?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg14"
+            value="1"
+            formControlName="preg14"
+          />La suma<br />
+          <input
+            type="radio"
+            name="preg14"
+            value="2"
+            formControlName="preg14"
+          />El minuendo<br />
+          <input
+            type="radio"
+            name="preg14"
+            value="3"
+            formControlName="preg14"
+          />El resultado<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">15.a-315=618,¿Qué número es a?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg15"
+            value="1"
+            formControlName="preg15"
+          />El número es 999<br />
+          <input
+            type="radio"
+            name="preg15"
+            value="2"
+            formControlName="preg15"
+          />El número es 876<br />
+          <input
+            type="radio"
+            name="preg15"
+            value="3"
+            formControlName="preg15"
+          />El número es 933<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">16.a-m=5 y a+m+5=12 ,¿Qué número es m?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg16"
+            value="1"
+            formControlName="preg16"
+          />El número es 3<br />
+          <input
+            type="radio"
+            name="preg16"
+            value="2"
+            formControlName="preg16"
+          />El número es 1<br />
+          <input
+            type="radio"
+            name="preg16"
+            value="3"
+            formControlName="preg16"
+          />El número es 6<br />
+        </div>
+      </div>
+     
+      <div class="pregresp">
+        <div class="pregunta">17.a-m=5 y a+m+5=12 ,¿Qué número es a?<br /></div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg17"
+            value="1"
+            formControlName="preg17"
+          />Ninguno<br />
+          <input
+            type="radio"
+            name="preg17"
+            value="2"
+            formControlName="preg17"
+          />El número es 1<br />
+          <input
+            type="radio"
+            name="preg17"
+            value="3"
+            formControlName="preg17"
+          />El número es 3<br />
+        </div>
+      </div>
+     
+      <div class="pregresp">
+        <div class="pregunta">
+          18.Resuelve el siguiente ejercicio, 450-(14-6+5-4) ,¿Cuál es el
+          resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg18"
+            value="1"
+            formControlName="preg18"
+          />El resultado es 448<br />
+          <input
+            type="radio"
+            name="preg18"
+            value="2"
+            formControlName="preg18"
+          />El resultado 444<br />
+          <input
+            type="radio"
+            name="preg18"
+            value="3"
+            formControlName="preg18"
+          />El resultado es 441<br />
+        </div>
+      </div>
+           <div class="pregresp">
+        <div class="pregunta">
+          19.Resuelve el siguiente ejercicio, (14+5)-(6-4+3)+(6-4+2) ,¿Cuál es
+          el resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg19"
+            value="1"
+            formControlName="preg19"
+          />El resultado es 20<br />
+          <input
+            type="radio"
+            name="preg19"
+            value="2"
+            formControlName="preg19"
+          />El resultado 15<br />
+          <input
+            type="radio"
+            name="preg19"
+            value="3"
+            formControlName="preg19"
+          />El resultado es 18<br />
+        </div>
+      </div>
+     
+      <div class="pregresp">
+        <div class="pregunta">
+          20.Resuelve el siguiente ejercicio, (8-1)-(16-9)+4-1+9-6+(11-6)-(9-4)
+          ,¿Cuál es el resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg20"
+            value="1"
+            formControlName="preg20"
+          />El resultado 10<br />
+          <input
+            type="radio"
+            name="preg20"
+            value="2"
+            formControlName="preg20"
+          />El resultado 6<br />
+          <input
+            type="radio"
+            name="preg20"
+            value="3"
+            formControlName="preg20"
+          />El resultado es 8<br />
+        </div>
+      </div>
+     
+      <div class="pregresp">
+        <div class="pregunta">
+          21.Resuelve el siguiente ejercicio, (16)(5)[3] ,¿Cuál es el resultado
+          de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg21"
+            value="1"
+            formControlName="preg21"
+          />El resultado 280<br />
+          <input
+            type="radio"
+            name="preg21"
+            value="2"
+            formControlName="preg21"
+          />El resultado 260<br />
+          <input
+            type="radio"
+            name="preg21"
+            value="3"
+            formControlName="preg21"
+          />El resultado es 240<br />
+        </div>
+      </div>
+     
+      <div class="pregresp">
+        <div class="pregunta">
+          22.Resuelve el siguiente ejercicio, (3(7x9))6 ,¿Cuál es el resultado
+          de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg22"
+            value="1"
+            formControlName="preg22"
+          />El resultado 1134<br />
+          <input
+            type="radio"
+            name="preg22"
+            value="2"
+            formControlName="preg22"
+          />El resultado 1260<br />
+          <input
+            type="radio"
+            name="preg22"
+            value="3"
+            formControlName="preg22"
+          />El resultado es 1180<br />
+        </div>
+      </div>
+
+     
+      <div class="pregresp">
+        <div class="pregunta">
+          23.Resuelve el siguiente ejercicio, ((128/2)/2)/2,¿Cuál es el
+          resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg23"
+            value="1"
+            formControlName="preg23"
+          />El resultado 16<br />
+          <input
+            type="radio"
+            name="preg23"
+            value="2"
+            formControlName="preg23"
+          />El resultado 32<br />
+          <input
+            type="radio"
+            name="preg23"
+            value="3"
+            formControlName="preg23"
+          />El resultado es 8<br />
+        </div>
+      </div>
+
+      <div class="pregresp">
+        <div class="pregunta">
+          24.Resuelve el siguiente ejercicio, (((250/5)/2)/5)/10 ,¿Cuál es el
+          resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg24"
+            value="1"
+            formControlName="preg24"
+          />El resultado 1<br />
+          <input
+            type="radio"
+            name="preg24"
+            value="2"
+            formControlName="preg24"
+          />El resultado 1/2<br />
+          <input
+            type="radio"
+            name="preg24"
+            value="3"
+            formControlName="preg24"
+          />El resultado 2<br />
+        </div>
+      </div>
+           <div class="pregresp">
+        <div class="pregunta">
+          25.Resuelve el siguiente ejercicio, (10((20x5)/(2x10)))/2 ,¿Cuál es el
+          resultado de la operación?<br />
+        </div>
+        <div class="respuestas">
+          <input
+            type="radio"
+            name="preg25"
+            value="1"
+            formControlName="preg25"
+          />El resultado 10<br />
+          <input
+            type="radio"
+            name="preg25"
+            value="2"
+            formControlName="preg25"
+          />El resultado 50<br />
+          <input
+            type="radio"
+            name="preg25"
+            value="3"
+            formControlName="preg25"
+          />El resultado 25<br />
+        </div>
+      </div>
+      <br />
+      <ul class="nav nav-tabs menu">
+        <li class="nav-item">
+          <button
+            type="submit"
+            [disabled]="formularioPreguntas.invalid"
+            class="btn btn-primary"
+          >
+            Calificar
+          </button>
+        </li>
+<br>
+        <li class="nav-item">
+          <a class="nav-link materia" aria-current="page"
+            >Calificación: {{ calificacion_1 }}</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <button type="reset" class="btn btn-danger">Borrar</button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            type="button"
+            class="btn btn-warning"
+            [disabled]="bloquear"
+            (click)="registrarCalificacion()"
+          >
+            Registrar Calificación
+          </button>
+        </li>
+      </ul>
+      <p>Respuestas Correctas:{{ respuestas_correctas_1 }}</p>
+      <p>Respuestas incorrectas: {{ respuestas_incorrectas_1 }}</p>
+      <p>
+        Nota: Si tienes alguna duda de algun tema o ejercicio consultalo con tu
+        asesor correspondiente.
+      </p>
+    </div>
+  </div>
+</form>
+<ng-template #successTpl> I'm a success toast </ng-template>

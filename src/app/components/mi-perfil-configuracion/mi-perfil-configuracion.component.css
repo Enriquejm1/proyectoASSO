@@ -1,0 +1,54 @@
+
+.contenido{
+    color: black;
+    background: white;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+  }
+  
+  
+  p{
+      font-size: 150%;
+      text-align: justify;
+      color: black;
+      background: white;
+  }
+  
+  h1{
+      font-size: 200%;
+      text-align: center;
+      background-color: #0c3563;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .Cursos{
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    background-color: #0c3563;
+}
+  
+  h2{
+      font-size: 150%;
+      text-align:left;
+      color: black;
+      
+  }
+  
+  table{
+    margin: 0 auto;
+  }
+
+  table td{
+    padding: 0 25px;
+  }
+
+  .btn_codigo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

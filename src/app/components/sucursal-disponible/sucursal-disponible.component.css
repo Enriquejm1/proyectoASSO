@@ -1,0 +1,30 @@
+
+h1{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    background-color: #0c3563;
+}
+
+
+.contenedor{
+ justify-content: center;
+ font-size: 90%;
+ display: grid;
+}
+
+
+td {
+    padding: 10px 50px;
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 0px solid black;
+    border-left: 10px;
+    text-align: center;
+}
+
+
+.contenido{
+    display: flex;
+  justify-content: center;
+}

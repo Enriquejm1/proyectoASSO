@@ -1,0 +1,682 @@
+<!--Examen Algebra-->
+<form [formGroup]="formularioPreguntas" (ngSubmit)="primerexamen($event)">
+    <div class="contenedor">
+      <h1>Examen de Trigonometria</h1>
+      <div class="contenido">
+        <div class="pregresp">
+          <div class="pregunta">1. ¿Qué es la trigonometria?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg1"
+              value="1"
+              formControlName="preg1"
+            />Es el que se encargar de estudiar las propiedades de diferentes figuras<br />
+            <input
+              type="radio"
+              name="preg1"
+              value="2"
+              formControlName="preg1"
+            />Es el que se encarga de estudiar las figuras<br />
+            <input
+              type="radio"
+              name="preg1"
+              value="3"
+              formControlName="preg1"
+            />Es el que se encarga de estudiar a los triangulos y angulos.<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">2. ¿Son figuras geométricas planas, básicas,
+             que poseen tres lados en contacto entre sí en puntos comunes 
+             denominados vértices<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg2"
+              value="1"
+              formControlName="preg2"
+            />Cuadrados<br />
+            <input
+              type="radio"
+              name="preg2"
+              value="2"
+              formControlName="preg2"
+            />Triangulos<br />
+            <input
+              type="radio"
+              name="preg2"
+              value="3"
+              formControlName="preg2"
+            />Hectagonos<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">3. ¿Cuáles son los elemtos de un triangulo?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg3"
+              value="1"
+              formControlName="preg3"
+            />Lados, Angulos y Vértices<br />
+            <input
+              type="radio"
+              name="preg3"
+              value="2"
+              formControlName="preg3"
+            />Lados y Vértices<br />
+            <input
+              type="radio"
+              name="preg3"
+              value="3"
+              formControlName="preg3"
+            />Angulos y Lados<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            4.¿Cuantos tipos de triangulos exiten? <br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg4"
+              value="1"
+              formControlName="preg4"
+            />3<br />
+            <input
+              type="radio"
+              name="preg4"
+              value="2"
+              formControlName="preg4"
+            />6 <br />
+            <input
+              type="radio"
+              name="preg4"
+              value="3"
+              formControlName="preg4"
+            />10<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">5. ¿Tipo de triangulo donde sus lados tienen la misma exacta longitud?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg5"
+              value="1"
+              formControlName="preg5"
+            />Equilátero<br />
+            <input
+              type="radio"
+              name="preg5"
+              value="2"
+              formControlName="preg5"
+            />Rectangulo<br />
+            <input
+              type="radio"
+              name="preg5"
+              value="3"
+              formControlName="preg5"
+            />Isósceles<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            6.¿Tipo de triangulo en donde todos sus lados tiene diferentes longitudes?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg6"
+              value="1"
+              formControlName="preg6"
+            />Oblicuángulo<br />
+            <input
+              type="radio"
+              name="preg6"
+              value="2"
+              formControlName="preg6"
+            />Escaleno<br />
+            <input
+              type="radio"
+              name="preg6"
+              value="3"
+              formControlName="preg6"
+            />Equilátero<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            7. ¿Tipo de triangulo cuyo angulo es de 90 grados?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg7"
+              value="1"
+              formControlName="preg7"
+            />Isosceles<br />
+            <input
+              type="radio"
+              name="preg7"
+              value="2"
+              formControlName="preg7"
+            />Escaleno<br />
+            <input
+              type="radio"
+              name="preg7"
+              value="3"
+              formControlName="preg7"
+            />Rectangulo<br />
+          </div>
+        </div>
+        <div class="pregresp">
+          <div class="pregunta">
+            8. ¿Tipo de triangulo cuyos tres ángulos interiores son menores de 90 grados?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg8"
+              value="1"
+              formControlName="preg8"
+            />Acutángulo<br />
+            <input
+              type="radio"
+              name="preg8"
+              value="2"
+              formControlName="preg8"
+            />Equilatero<br />
+            <input
+              type="radio"
+              name="preg8"
+              value="3"
+              formControlName="preg8"
+            />Isosceles<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            9. ¿Tipo de triangulo donde dos de sus lados tienen la misma longitud y el tercero una distinta.<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg9"
+              value="1"
+              formControlName="preg9"
+            />Rectangulo<br />
+            <input
+              type="radio"
+              name="preg9"
+              value="2"
+              formControlName="preg9"
+            />Acutangulo<br />
+            <input
+              type="radio"
+              name="preg9"
+              value="3"
+              formControlName="preg9"
+            />Isosceles<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            10.¿Cuantos tipos de angulos existen?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg10"
+              value="1"
+              formControlName="preg10"
+            />7<br />
+            <input
+              type="radio"
+              name="preg10"
+              value="2"
+              formControlName="preg10"
+            />4<br />
+            <input
+              type="radio"
+              name="preg10"
+              value="3"
+              formControlName="preg10"
+            />6<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">11.¿Qué angulo es de 180 grados?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg11"
+              value="1"
+              formControlName="preg11"
+            />Obtuso<br />
+            <input
+              type="radio"
+              name="preg11"
+              value="2"
+              formControlName="preg11"
+            />Agudo<br />
+            <input
+              type="radio"
+              name="preg11"
+              value="3"
+              formControlName="preg11"
+            />Llano<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">12.¿Qué angulo es de 90 grados?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg12"
+              value="1"
+              formControlName="preg12"
+            />Completo<br />
+            <input
+              type="radio"
+              name="preg12"
+              value="2"
+              formControlName="preg12"
+            />Recto<br />
+            <input
+              type="radio"
+              name="preg12"
+              value="3"
+              formControlName="preg12"
+            />Obtuso<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            13.¿Qué angulo es de 360 grados?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg13"
+              value="1"
+              formControlName="preg13"
+            />Completo<br />
+            <input
+              type="radio"
+              name="preg13"
+              value="2"
+              formControlName="preg13"
+            />Agudo<br />
+            <input
+              type="radio"
+              name="preg13"
+              value="3"
+              formControlName="preg13"
+            />Concavo<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            14.¿Qué angulo es mayor a 90 grados? <br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg14"
+              value="1"
+              formControlName="preg14"
+            />Convexo<br />
+            <input
+              type="radio"
+              name="preg14"
+              value="2"
+              formControlName="preg14"
+            />Agudo<br />
+            <input
+              type="radio"
+              name="preg14"
+              value="3"
+              formControlName="preg14"
+            />Obtuso<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">15.¿Qué angulo es menor a 90 grados?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg15"
+              value="1"
+              formControlName="preg15"
+            />Concavo<br />
+            <input
+              type="radio"
+              name="preg15"
+              value="2"
+              formControlName="preg15"
+            />Agudo<br />
+            <input
+              type="radio"
+              name="preg15"
+              value="3"
+              formControlName="preg15"
+            />Convexo<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">16.¿Qué angulo es de mas de 180 grados?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg16"
+              value="1"
+              formControlName="preg16"
+            />Rectangulo<br />
+            <input
+              type="radio"
+              name="preg16"
+              value="2"
+              formControlName="preg16"
+            />Convexo<br />
+            <input
+              type="radio"
+              name="preg16"
+              value="3"
+              formControlName="preg16"
+            />Concavo<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">17.¿Qué angulo es menor de 180 grados?<br /></div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg17"
+              value="1"
+              formControlName="preg17"
+            />Convexo<br />
+            <input
+              type="radio"
+              name="preg17"
+              value="2"
+              formControlName="preg17"
+            />Concavo<br />
+            <input
+              type="radio"
+              name="preg17"
+              value="3"
+              formControlName="preg17"
+            />Obtuso<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            18.¿Cuál es la formula para obtener el perimetro de un triangulo?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg18"
+              value="1"
+              formControlName="preg18"
+            />P = (AB+BC+CA)*2<br />
+            <input
+              type="radio"
+              name="preg18"
+              value="2"
+              formControlName="preg18"
+            />P = (AB+BC+CA)/2<br />
+            <input
+              type="radio"
+              name="preg18"
+              value="3"
+              formControlName="preg18"
+            />P = AB+BC+CA<br />
+          </div>
+        </div>
+             <div class="pregresp">
+          <div class="pregunta">
+            19.¿Cuál es la formula para obtener el area de un triangulo?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg19"
+              value="1"
+              formControlName="preg19"
+            />A = (BxH)/2 <br />
+            <input
+              type="radio"
+              name="preg19"
+              value="2"
+              formControlName="preg19"
+            />A = 2(BxH)<br />
+            <input
+              type="radio"
+              name="preg19"
+              value="3"
+              formControlName="preg19"
+            />A = (BxH)^2<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            20.¿Cuál es la formula de pitagoras?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg20"
+              value="1"
+              formControlName="preg20"
+            />C = A + B<br />
+            <input
+              type="radio"
+              name="preg20"
+              value="2"
+              formControlName="preg20"
+            />c = (A^2)+(B^2)<br />
+            <input
+              type="radio"
+              name="preg20"
+              value="3"
+              formControlName="preg20"
+            />(C^2)= (A^2)+(B^2)<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            21.¿Cuales son los elementos que considera la formula de pitagoas?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg21"
+              value="1"
+              formControlName="preg21"
+            />Angulos y Cateto adyacente<br />
+            <input
+              type="radio"
+              name="preg21"
+              value="2"
+              formControlName="preg21"
+            />Hipotenusa, Cateto adyacente, Cateto Opuesto<br />
+            <input
+              type="radio"
+              name="preg21"
+              value="3"
+              formControlName="preg21"
+            />Hipotenusa,catetos y angulos<br />
+          </div>
+        </div>
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            22.Hallar las medidas de los lados de una vela con forma de triángulo rectángulo si 
+            se quiere que tenga un área de 30 metros al cuadrado y que uno de sus catetos mida 
+            5 metros para que se pueda colocar en el mástil. <br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg22"
+              value="1"
+              formControlName="preg22"
+            />Las medidas son 8,13 y 15 metros<br />
+            <input
+              type="radio"
+              name="preg22"
+              value="2"
+              formControlName="preg22"
+            />Las medidas son 15,22 y 8 metros<br />
+            <input
+              type="radio"
+              name="preg22"
+              value="3"
+              formControlName="preg22"
+            />Las medidas son 5,12 y 13 metros<br />
+          </div>
+        </div>
+  
+       
+        <div class="pregresp">
+          <div class="pregunta">
+            23.¿Cuál es formula trigonometrica del seno?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg23"
+              value="1"
+              formControlName="preg23"
+            />sen = cateto opuesto/Cateto adyacente<br />
+            <input
+              type="radio"
+              name="preg23"
+              value="2"
+              formControlName="preg23"
+            />sen = cateto opuesto/hipotenusa<br />
+            <input
+              type="radio"
+              name="preg23"
+              value="3"
+              formControlName="preg23"
+            />sen = cateto adyacente/hipotenusa<br />
+          </div>
+        </div>
+  
+        <div class="pregresp">
+          <div class="pregunta">
+            24.¿Cuál es formula trigonometrica del coseno?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg24"
+              value="1"
+              formControlName="preg24"
+            />cos = cateto opuesto/hipotenusa<br />
+            <input
+              type="radio"
+              name="preg24"
+              value="2"
+              formControlName="preg24"
+            />cos = cateto adyacente/Cateto opuesto<br />
+            <input
+              type="radio"
+              name="preg24"
+              value="3"
+              formControlName="preg24"
+            />cos = cateto adyacente/hipotenusa<br />
+          </div>
+        </div>
+             <div class="pregresp">
+          <div class="pregunta">
+            25.¿Cuál es formula trigonometrica de la tangente?<br />
+          </div>
+          <div class="respuestas">
+            <input
+              type="radio"
+              name="preg25"
+              value="1"
+              formControlName="preg25"
+            />tan = cateto opuesto/Cateto adyacente<br />
+            <input
+              type="radio"
+              name="preg25"
+              value="2"
+              formControlName="preg25"
+            />tan = cateto adyacente/Cateto opuesto<br />
+            <input
+              type="radio"
+              name="preg25"
+              value="3"
+              formControlName="preg25"
+            />tan = cateto opuesto/hipotenusa<br />
+          </div>
+        </div>
+        <br />
+        <ul class="nav nav-tabs menu">
+          <li class="nav-item">
+            <button
+              type="submit"
+              [disabled]="formularioPreguntas.invalid"
+              class="btn btn-primary"
+            >
+              Calificar
+            </button>
+          </li>
+  <br>
+          <li class="nav-item">
+            <a class="nav-link materia" aria-current="page"
+              >Calificación: {{ calificacion_1 }}</a
+            >
+          </li>
+  
+          <li class="nav-item">
+            <button type="reset" class="btn btn-danger">Borrar</button>
+          </li>
+  
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-warning"
+              [disabled]="bloquear"
+              (click)="registrarCalificacion()"
+            >
+              Registrar Calificación
+            </button>
+          </li>
+        </ul>
+        <p>Respuestas Correctas:{{ respuestas_correctas_1 }}</p>
+        <p>Respuestas incorrectas: {{ respuestas_incorrectas_1 }}</p>
+        <p>
+          Nota: Si tienes alguna duda de algun tema o ejercicio consultalo con tu
+          asesor correspondiente.
+        </p>
+      </div>
+    </div>
+  </form>
+  <ng-template #successTpl> I'm a success toast </ng-template>
+

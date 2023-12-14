@@ -1,0 +1,58 @@
+
+p{
+    font-size: 50%;
+}
+
+h2{
+    color: black;
+    border-top: 10%;
+    font-size: 230%;
+    text-align: center;
+    background-color: white;
+}
+
+h1{
+    color: white;
+    border-top: 10%;
+    font-size: 250%;
+    text-align: center;
+    background-color: #0c3563;
+}
+
+td {
+    padding: 100px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 0px solid black;
+    border-left: 10px;
+    font-size: 200%;
+    text-align: center;
+}
+
+.video{
+    display: flex;
+     justify-content: center;
+}
+
+.contenido{
+    justify-content: center;
+    display: block;
+    margin-top: 30px;
+    margin-left: 190px;
+    margin-right: 199px;
+    margin-bottom: 30px;
+}
+
+.contenido p{
+    font-size: 100%;
+    text-align: justify;
+}
+
+
+.foo{
+    font-size: 50%;
+}
+.curso{
+    text-align: justify;
+    padding: 10%;
+}
