@@ -1,4 +1,5 @@
-#Plataforma Web para Gestión de Estudiantes – MUCHASMATEMÁTICAS
+## Plataforma Web para Gestión de Estudiantes – MUCHASMATEMÁTICAS
+
 Desarrollo de una plataforma web para la gestión académica de estudiantes y administradores, con autenticación de usuarios, panel administrativo y módulos de evaluación en línea.
 Principales funcionalidades:
 Implementación de registro e inicio de sesión para estudiantes y administradores.
