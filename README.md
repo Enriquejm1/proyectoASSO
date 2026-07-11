@@ -1,4 +1,4 @@
-Plataforma Web para Gestión de Estudiantes – MUCHASMATEMÁTICAS
+#Plataforma Web para Gestión de Estudiantes – MUCHASMATEMÁTICAS
 Desarrollo de una plataforma web para la gestión académica de estudiantes y administradores, con autenticación de usuarios, panel administrativo y módulos de evaluación en línea.
 Principales funcionalidades:
 Implementación de registro e inicio de sesión para estudiantes y administradores.
@@ -10,8 +10,6 @@ Implementación de registro e inicio de sesión para estudiantes y administrador
 , Implementación de cifrado de contraseñas para garantizar la seguridad de las credenciales almacenadas en la base de datos.
 , Aplicación de una arquitectura cliente-servidor para la administración de usuarios y contenido académico.
 Tecnologías utilizadas: Angular, TypeScript, HTML5, CSS3, Bootstrap, jQuery, Express.js y MariaDB.
-
-# MuchasMatematicas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
